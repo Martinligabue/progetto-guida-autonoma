@@ -4,14 +4,15 @@ La Central ECU effettua le seguenti azioni. All’avvio del sistema, imposta la 
 Dopo aver ricevuto il comando INIZIO, durante la sua esecuzione, la Central ECU riceve continuamente dati dai sensori.
 */
 #include <stdio.h>
+#include <stdbool.h>
 
 int componenthminterface(char* comando){
-    while(1==1)
+    while(1==1)//come si separa e si lascia girare asincronamente?
         printf(comando);
 
     int velocita_attuale = 0;
-
     bool inizio = false;
+
     while (inizio == false){
         if (comando == "INIZIO"){
             inizio = true;
@@ -22,7 +23,7 @@ int componenthminterface(char* comando){
             inizio = false;
         }
         else{
-            velocita_attuale = velocita_attuale + 1;
+            //main loop
         }
     }
     return 0;
