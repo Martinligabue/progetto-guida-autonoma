@@ -19,6 +19,7 @@ int componenthminterface(char* comando){
         }
     }
     while (inizio == true){
+        printf("Velocità attuale: %d", velocita_attuale);
         if (comando == "STOP"){
             inizio = false;
         }

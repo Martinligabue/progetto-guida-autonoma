@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/tabris/Documenti/GitHub/progetto-guida-autonoma",
-      "program": "/home/tabris/Documenti/GitHub/progetto-guida-autonoma/build/Debug/outDebug",
+      "program": "/home/tabris/Documenti/GitHub/progetto-guida-autonoma/build/Release/outRelease",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
