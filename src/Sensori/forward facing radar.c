@@ -1,0 +1,1 @@
+/*Il componente iterativamente legge i dati da una sorgente e li invia alla Central ECU. In dettaglio, ogni 1 secondo prova a leggere 8 byte da /dev/urandom. Se riesce a leggere 8 byte, questi sono trasmessi alla Central ECU. Altrimenti (se legge meno di 8 byte), non invia dati alla Central ECU. I dati inviati sono registrati nel file di log radar.log*/

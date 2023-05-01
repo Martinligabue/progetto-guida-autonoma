@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "Controllo/Componente_Central_ECU.c"
+#include "Controllo/Central ECU.c"
 
 int main(){
     //send character list to componenthminterface function of Componente_Central_ECU.c

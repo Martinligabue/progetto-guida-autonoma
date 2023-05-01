@@ -1,0 +1,1 @@
+/*Il componente agisce solo quando park assist è attivo. Finchè park assist è attivo, 1 volta al secondo, legge 8 byte da /dev/urandom e li invia a park assist. Altrimenti (se legge meno di 8 byte), non invia dati a Park Assist. I dati inviati sono registrati nel file di log cameras.log*/

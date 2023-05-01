@@ -1,0 +1,3 @@
+/*
+Il componente riceve dalla Central ECU il comando di decelerazione o un segnale di pericolo. Il comando di decelerazione è ricevuto nel formato “FRENO 5”, dove 5 indica la riduzione di velocità richiesta. La velocità è decrementata, per ogni messaggio, di 5 KM/H. Alla ricezione del messaggio dalla Central ECU, il componente stampa nel file di log brake.log la data attuale, e “FRENO 5”. Se il componente riceve il segnale di ARRESTO dalla Central ECU, arresta l’auto (azione istantanea). Questo equivale a scrivere “ARRESTO AUTO” nel file di log brake.log
+*/

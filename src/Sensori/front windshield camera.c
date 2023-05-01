@@ -1,0 +1,1 @@
+/* Il componente iterativamente legge dati da una sorgente e li invia alla Central ECU. In dettaglio, ogni 1 secondo legge una riga dal file frontCamera.data, e trasmette il dato letto alla Central ECU. I dati inviati sono inoltre registrati nel file di log camera.log*/
