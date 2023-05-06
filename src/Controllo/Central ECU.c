@@ -35,26 +35,26 @@ velocità a 0 e invia all’output della HMI un messaggio di totale terminazione
 #include <stdio.h>
 #include <stdbool.h>
 
-int componenthminterface(char* comando){
-    while(1==1)//come si separa e si lascia girare asincronamente?
-        printf(comando);
+// int componenthminterface(char* comando){
+//     while(1==1)//come si separa e si lascia girare asincronamente?
+//         printf(comando);
 
-    int velocita_attuale = 0;
-    bool inizio = false;
+//     int velocita_attuale = 0;
+//     bool inizio = false;
 
-    while (inizio == false){
-        if (comando == "INIZIO"){
-            inizio = true;
-        }
-    }
-    while (inizio == true){
-        printf("Velocità attuale: %d", velocita_attuale);
-        if (comando == "STOP"){
-            inizio = false;
-        }
-        else{
-            //main loop
-        }
-    }
-    return 0;
-}
+//     while (inizio == false){
+//         if (comando == "INIZIO"){
+//             inizio = true;
+//         }
+//     }
+//     while (inizio == true){
+//         printf("Velocità attuale: %d", velocita_attuale);
+//         // if (comando == "STOP"){
+//         //     inizio = false;
+//         // }
+//         // else{
+//         //     //main loop
+//         // }
+//     }
+//     return 0;
+// }

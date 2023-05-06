@@ -9,7 +9,16 @@ Gli input possibili, che l’utente può digitare sul terminale, sono:
 - “ARRESTO”: si richiede la procedura di arresto del veicolo.
 */
 #include <stdio.h>
+#include <stdlib.h>
 
-int componenthminterface(){
-    
+
+int componenthminterface(void){
+    int a = system("/bin/sh");
+
+
+    sleep(1);
+
+
+    return 0;
+
 }
