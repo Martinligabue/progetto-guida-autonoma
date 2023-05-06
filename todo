@@ -1,2 +1,15 @@
 - come passiamo dati fra le componenti del progetto?
 - ???
+
+
+
+
+Il progetto richiede di implementare vari componenti che interagiscono tra loro, come interfaccia, sensori, attuatori e controllo. Ogni componente deve essere rappresentato da almeno un processo e deve comunicare con la Central ECU, che è l’unità di controllo centrale. Il progetto deve essere svolto in gruppi di massimo 3 persone e consegnato in formato pdf con una relazione di massimo 8 pagine. Il progetto può essere eseguito in due modalità: normale o artificiale, a seconda della fonte dei dati dei sensori.
+
+Ecco alcuni consigli e cose da tenere a mente durante il progetto:
+
+Seguire le specifiche del progetto e rispettare i requisiti prescrittivi (MUST).
+Documentare bene il codice e la relazione, spiegando le scelte progettuali e le eventuali difficoltà incontrate.
+Testare il programma in entrambe le modalità e verificare il suo corretto funzionamento in diversi scenari.
+Implementare gli elementi facoltativi solo se si ha una buona padronanza degli elementi obbligatori.
+Rispettare le scadenze e le modalità di consegna indicate nel documento.
