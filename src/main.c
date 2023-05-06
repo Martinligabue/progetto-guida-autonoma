@@ -2,7 +2,7 @@
 
 void child(){
     printf("sono il figliolo e apro una shell");
-    int a = system("/bin/sh cat");
+    int a = system("konsole");
     printf("teoricamente sto scrivendo nella shell del figlio");
 
 }
