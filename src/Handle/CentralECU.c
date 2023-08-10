@@ -33,28 +33,26 @@ Facoltativo. Se la Central ECU riceve il segnale di fallimento accelerazione da 
 velocità a 0 e invia all’output della HMI un messaggio di totale terminazione dell’esecuzione
 */
 #include <stdio.h>
-#include <stdbool.h>
+#include <string.h>
+#include "../../include/Actuators/SteerByWire.h"
+#include "../../include/Handle/CentralECU.h"
 
-// int componenthminterface(char* comando){
-//     while(1==1)//come si separa e si lascia girare asincronamente?
-//         printf(comando);
+#define READ 0
+#define WRITE 1
 
-//     int velocita_attuale = 0;
-//     bool inizio = false;
 
-//     while (inizio == false){
-//         if (comando == "INIZIO"){
-//             inizio = true;
-//         }
-//     }
-//     while (inizio == true){
-//         printf("Velocità attuale: %d", velocita_attuale);
-//         // if (comando == "STOP"){
-//         //     inizio = false;
-//         // }
-//         // else{
-//         //     //main loop
-//         // }
-//     }
-//     return 0;
-// }
+void initSteerByWire(){
+    int fd [2], bytesRead;
+    char message [100];
+    pipe (fd);
+    if (fork() == 0){
+        close(fd[WRITE]);
+        run(fd[READ]);
+    }else{
+        
+    }
+}
+
+int main(){
+    
+}

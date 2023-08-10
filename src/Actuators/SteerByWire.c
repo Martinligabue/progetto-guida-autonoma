@@ -3,6 +3,10 @@ Questo componente riceve dalla Central ECU il comando di girare a DESTRA o SINIS
 Ogni secondo, il componente stampa nel file di log steer.log: “NO ACTION”, “STO GIRANDO A DESTRA”, “STO GIRANDO A SINISTRA”, sulla base dell’azione in corso
 */
 #include <stdio.h>
+#include "../../include/Attuatori/SteerByWire.h"
 
-int main() {
+void run(int fd){
+    while(1){
+        read(fd,buffer,10);
+    }
 }

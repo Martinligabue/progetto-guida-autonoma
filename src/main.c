@@ -25,7 +25,5 @@ int componenthminterface(void){
 
 
 int main(){
-    //send character list to componenthminterface function of Componente_Central_ECU.c
-    componenthminterface();
-    return 0;
+    
 }
