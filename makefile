@@ -1,3 +1,4 @@
+all:  centralECU steerByWire
 
 BUILD := bin
 INCLUDE := include
@@ -19,7 +20,11 @@ HANDLE_SOURCE := src/Handle
 HANDLE_INCLUDE := include/Handle
 
 centralECU.o: $(HANDLE_SOURCE)/CentralECU.c $(HANDLE_INCLUDE)/CentralECU.h
-	gcc -I $(INCLUDE) -c $(HANDLE_SOURCE)/CentralECU.c -o $(BUILD)/CentralECU.o
+	gcc -I $(INCLUDE) -o $(BUILD)/CentralECU.o $(HANDLE_SOURCE)/CentralECU.c  $(BUILD)/SteerByWire.o
 
-a: 
+
+all: 
 	gcc -v
+
+clean:
+	rm $(BUILD)/* 

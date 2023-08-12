@@ -7,6 +7,7 @@ Ogni secondo, il componente stampa nel file di log steer.log: “NO ACTION”, �
 
 void run(int fd){
     while(1){
+        char * buffer;
         read(fd,buffer,10);
     }
 }

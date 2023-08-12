@@ -40,7 +40,6 @@ velocità a 0 e invia all’output della HMI un messaggio di totale terminazione
 #define READ 0
 #define WRITE 1
 
-
 void initSteerByWire(){
     int fd [2], bytesRead;
     char message [100];
@@ -48,6 +47,7 @@ void initSteerByWire(){
     if (fork() == 0){
         close(fd[WRITE]);
         run(fd[READ]);
+        
     }else{
         
     }
