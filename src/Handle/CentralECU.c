@@ -34,8 +34,8 @@ velocità a 0 e invia all’output della HMI un messaggio di totale terminazione
 */
 #include <stdio.h>
 #include <string.h>
-#include "../../include/Actuators/SteerByWire.h"
-#include "../../include/Handle/CentralECU.h"
+#include "Actuators/SteerByWire.h"
+#include "Handle/CentralECU.h"
 
 #define READ 0
 #define WRITE 1

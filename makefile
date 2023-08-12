@@ -1,38 +1,25 @@
-# The makefile for the project will compile all c file in the various folders, then the main.c
 
-# Compiler
-CC = gcc
+BUILD := bin
+INCLUDE := include
+test: $(BUILD)/steerByWire.o
+	gcc -v
+	echo "a"
 
-# Compiler flags
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=c99
+# -I percorso cartella headers u gay
+#░▒▓   ~/university/sistemi-operativi/progetto-guida-autonoma   main ✘!󰄬   10:55  
+#❯ gcc -I./include/Actuators/ ./src/Handle/CentralECU.c -o a
 
-# Source files
-SRC = $(wildcard */*.c)
+ACTUATORS_SOURCE := src/Actuators
+ACTUATORS_INCLUDE := include/Actuators
 
-# Object files
-OBJ = $(SRC:.c=.o)
+steerByWire.o: $(ACTUATORS_SOURCE)/SteerByWire.c
+	gcc -I $(INCLUDE) -c $(ACTUATORS_SOURCE)/SteerByWire.c -o $(BUILD)/SteerByWire.o
 
-# Executable
-EXEC = main
+HANDLE_SOURCE := src/Handle
+HANDLE_INCLUDE := include/Handle
 
-# Build target
-all: $(EXEC)
+centralECU.o: $(HANDLE_SOURCE)/CentralECU.c $(HANDLE_INCLUDE)/CentralECU.h
+	gcc -I $(INCLUDE) -c $(HANDLE_SOURCE)/CentralECU.c -o $(BUILD)/CentralECU.o
 
-# Link
-$(EXEC): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(EXEC)
-
-# Compile
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Clean
-clean:
-	rm -f $(OBJ) $(EXEC)
-
-# Rebuild
-rebuild: clean all
-
-# Run
-run: all
-	./$(EXEC)
+a: 
+	gcc -v
